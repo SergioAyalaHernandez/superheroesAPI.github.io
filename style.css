@@ -1,46 +1,64 @@
-html {
-    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+/* Estilos para el encabezado */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  font-family: 'Faster One', cursive;
+  font-size: 48px;
+  margin: 0;
+}
+
+header p {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Estilos para la sección */
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  width: calc(33.33% - 40px);
+}
+
+article h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+article p {
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+article ul {
+  margin: 0;
+  padding: 0;
+}
+
+article li {
+  font-size: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos responsivos */
+@media only screen and (max-width: 768px) {
+  section {
+    display: block;
   }
-  
-  body {
-    width: 800px;
-    margin: 0 auto;
+
+  article {
+    width: 100%;
   }
-  
-  h1, h2 {
-    font-family: 'Faster One', cursive;
-  }
-  
-  /* header styles */
-  
-  h1 {
-    font-size: 4rem;
-    text-align: center;
-  }
-  
-  header p {
-    font-size: 1.3rem;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  /* section styles */
-  
-  section article {
-    width: 33%;
-    float: left;
-  }
-  
-  section p {
-    margin: 5px 0;
-  }
-  
-  section ul {
-    margin-top: 0;
-  }
-  
-  h2 {
-    font-size: 2.5rem;
-    letter-spacing: -5px;
-    margin-bottom: 10px;
-  }
+}
